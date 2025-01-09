@@ -1,3 +1,81 @@
-<h1>Hello World</h1>
-<br>
-<h3>This is a Test File</h3>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lizandro Vivanco - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development">
+    <meta name="author" content="Lizandro Vivanco">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+    <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lemon&family=Permanent+Marker&display=swap" rel="stylesheet">
+
+      <!--  Essential META Tags -->
+    <meta property="og:title" content="WDD 131 - Dynamic Web Fundamentals - Lizandro Vivanco">
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/City_of_Lima%2C_Peru.jpg/640px-City_of_Lima%2C_Peru.jpg">
+    <meta property="og:url" content="https://lizandrov.github.io/wdd131/">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!--  Non-Essential, But Recommended -->
+    <meta property="og:description" content="WDD 131 - Dynamic Web Fundamentals">
+    <meta property="og:site_name" content="Lizandro Vivanco">
+    <meta name="twitter:image:alt" content="Image of Lima, Peru">
+
+    <!--  Non-Essential, But Required for Analytics -->
+    <meta property="fb:app_id" content="Lizandro_Vivanco" />
+    <meta name="twitter:site" content="@LizandroV">
+
+    <!-- Scripts -->
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>WDD 131: Dynamic Web Fundamentals - <span class="name">Lizandro vivanco Casamona</span></h1>
+    </header>
+        
+    <nav class="navigation">
+        <a href="https://www.linkedin.com/in/lvivanco16/?locale=en_US">LinkedIn</a>
+        <a href="https://byupw.instructure.com/">Canvas</a>
+        <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/mosiah/2?lang=eng&id=p41#p41" target="_blank">Scripture</a>
+        <a href="#">Final Project</a>
+    </nav>
+
+    <main>
+        <section class="card" id="aboutme">
+            <h3>About Me</h3>
+            <div class="intro">
+                <p>I am a passionate programmer with a strong interest in web development and software engineering. Over the years, I have honed my skills in various programming languages and technologies, and I am always eager to learn more.</p>
+                <img src="images/profile.webp" alt="Lizandro Vivanco">
+
+                <h4>Lima, Peru</h4>
+                <img src="images/peruflag.webp" alt="Peru Flag">
+                <p>My hometown is Lima, Peru, a beautiful city with a rich history and culture. I am proud to call it home, and I am always excited to share its beauty with others.</p>
+            </div>
+        </section>
+        <section class="card" id="resources">
+            <h3>Web Dev Resources</h3>
+            <ul>
+                <li><a href="lesson05/bom.html">Favorite Chapter</a></li>
+                <li><a href="https://codepen.io/LizandroV/pen/gOEQgVO?editors=1100">Pseudo-class Fun</a></li>
+                <li><a href="images/landscape.webp">WebP</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="copyrightYear"></span> 🎮 Lizandro Vivanco 🎮 Peru</p>
+        <p id="mod">Last Modification: <span id="modified">Today</span></p>
+    </footer>
+</body>
+</html>

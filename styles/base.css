@@ -1,0 +1,110 @@
+:root {
+    /* Project colors */
+    --primary-color: #1b60a0;
+    --secondary-color: #3b3b3b;
+    --tertiary-color: #247BA0;
+    --default-color: #EEF0F2;
+    --hover-mode: #a7a7a7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 80vw;
+    margin: 0 auto;
+    font-family: "Nunito", sans-serif;
+    background-color: var(--default-color);
+}
+
+header {
+    margin-top: 20px;
+    background: var(--primary-color);
+}
+
+header h1{
+    color: var(--default-color);
+    font-size: 20px;
+    font-weight: lighter;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+}
+
+header .name{
+    color: yellow;
+}
+
+.navigation {
+	display: flex;
+	flex-direction: row;
+	list-style: none;
+    justify-content: space-around;
+	background-color: var(--secondary-color);
+    text-align: center;
+    padding: 5px;
+}
+
+.navigation a {
+	padding: 0.5rem;
+	text-align: center;
+	text-decoration: none;
+	color: var(--default-color);
+}
+.navigation a:hover {
+	background-color: var(--hover-mode);
+	color: var(--secondary-color);
+	font-weight: 700;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.card{
+    display: grid;
+    border-style:solid;
+    border-width: 2px;
+    border-color: var(--secondary-color);
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.card h3{
+    text-align: center;
+    background: var(--primary-color);
+    color: var(--default-color);
+    font-size: 16px;
+    padding: 10px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.card ul li {
+    text-decoration: none;
+}
+
+main a:link,
+main a:visited {
+  display: inline-block;
+  margin-inline-end: 10px;
+}
+
+.card p{
+    text-align: center;
+}
+
+
+footer{
+    background: var(--primary-color);
+    color: var(--default-color);
+    text-align: center;
+    padding: 20px;
+}
+
+footer #mod{
+    color: yellow;
+}
