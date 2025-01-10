@@ -28,7 +28,6 @@ header {
 header h1{
     color: var(--default-color);
     font-size: 20px;
-    font-weight: lighter;
     text-align: center;
     padding: 20px;
     margin: 0;
