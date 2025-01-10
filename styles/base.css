@@ -60,43 +60,101 @@ header .name{
 	font-weight: 700;
 }
 
-main {
+.main {
     display: grid;
-    grid-template-columns: 2fr 1fr;
-}
-.card{
-    display: grid;
-    border-style:solid;
-    border-width: 2px;
-    border-color: var(--secondary-color);
-    border-radius: 5px;
-    margin: 10px;
+    grid-template-columns: 3fr 1fr;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.card h3{
-    text-align: center;
-    background: var(--primary-color);
+@media (max-width: 768px) {
+    .main {
+        grid-template-columns: 1fr;
+    }
+}
+
+.card {
+    border: 1px solid var(--secondary-color);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card-header {
+    background-color: var(--primary-color);
     color: var(--default-color);
-    font-size: 16px;
-    padding: 10px;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
+    padding: 1rem;
+    text-align: center;
 }
 
-.card ul li {
+.card-content {
+    padding: 1.5rem;
+}
+
+.about-content {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.profile-section {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 1.5rem;
+}
+
+@media (max-width: 600px) {
+    .profile-section {
+        grid-template-columns: 1fr;
+    }
+}
+
+.profile-image {
+    width: 200px;
+    height: auto;
+}
+
+.madagascar-section {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1rem;
+    align-items: start;
+}
+
+.flag {
+    width: 120px;
+    border: 1px solid var(--primary-color);
+    padding: 0.5rem;
+}
+
+.flag img {
+    width: 100%;
+    height: auto;
+}
+
+.flag-caption {
+    font-style: italic;
+    font-size: 0.8rem;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.resources-list {
+    list-style: none;
+}
+
+.resources-list li {
+    margin-bottom: 0.5rem;
+}
+
+.resources-list a {
+    color: var(--primary-color);
     text-decoration: none;
 }
 
-main a:link,
-main a:visited {
-  display: inline-block;
-  margin-inline-end: 10px;
+.resources-list a:hover {
+    text-decoration: underline;
 }
-
-.card p{
-    text-align: center;
-}
-
 
 footer{
     background: var(--primary-color);
