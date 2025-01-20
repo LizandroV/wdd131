@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+body {
+    width: 100%;
+    margin: 0 auto;
+    font-family: "Rubik", sans-serif;
+}
+
+header {
+    display: grid;
+    position: relative;
+    grid-template-columns: auto auto;
+    background: rgb(16, 80, 122);
+    color: white;
+}
+
+header h1{
+    grid-column: 1/2;
+    text-align: left;
+    padding: 10px;
+    margin: 0;
+}
+/*START HAMBURGER MENU*/
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: white;
+ 	position: absolute;
+	top: 1rem;
+	right:1rem;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "X";
+}
+
+.navigation {
+    grid-column: 1/3;
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+    justify-content: center;
+	background-color: black;
+	color: #fff;
+    text-align: center;
+}
+
+.navigation a {
+	display: none;
+	padding: 0.5rem;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+}
+.navigation a:hover {
+	background-color: #bbb;
+	color: #333;
+	font-weight: 700;
+}
+
+/*END HAMBURGER MENU*/
+.open a {
+	display: block;
+}
+main{
+    margin: 0 auto;
+}
+main h2{
+    text-align: center;
+}
+
+figure{
+    text-align: center;
+}
+
+
+figure img{
+    width: 100%;
+}
+
+.temples{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+footer{
+    background: rgb(16, 80, 122);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+footer #mod{
+    color: yellow;
+}
