@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+body {
+    width: 450px;
+    margin: 0 auto;
+    font-family: "Rubik", sans-serif;
+}
+
+header {
+    display: grid;
+    position: relative;
+    grid-template-columns: auto auto auto;
+    background: rgb(16, 80, 122);
+    color: white;
+}
+
+
+header img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50px;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    padding: 10px;
+}
+
+header h1{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+}
+/*START HAMBURGER MENU*/
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: white;
+ 	position: absolute;
+	top: 1rem;
+	right:1rem;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "X";
+}
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+    justify-content: center;
+	background-color: black;
+	color: #fff;
+    text-align: center;
+}
+
+.navigation a {
+	display: none;
+	padding: 0.5rem;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+}
+.navigation a:hover {
+	background-color: #bbb;
+	color: #333;
+	font-weight: 700;
+}
+
+/*END HAMBURGER MENU*/
+.open a {
+	display: block;
+}
+
+.hero{
+    position: relative;
+}
+
+.hero img{
+    width: 100%;
+    height: auto;
+}
+
+.text{
+    position: absolute;
+    z-index: 1;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    top: 10px;
+    left: 10px;
+    font-size: 15px;
+	border: 1px solid rgba(0,0,0,.75);
+	padding: 1.5rem;
+	box-shadow: 0 0 0.5rem #fff;
+	opacity: 0.75;
+}
+
+main h2{
+    font-family:"Rubik", sans-serif;
+    font-size: 16px;
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: 0;
+}
+
+hr{
+    margin: 0 20px 0 20px;
+}
+
+.card{
+    display: grid;
+    border-style:solid;
+    border-width: 1px;
+    border-color: #8f857d;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.card h3{
+    text-align: center;
+    background: rgb(16, 80, 122);
+    color: white;
+    font-family:"Rubik", sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 10px;
+}
+
+.card ul li {
+    font-family:"Rubik", sans-serif;
+    text-decoration: none;
+}
+
+main a:link,
+main a:visited {
+  display: inline-block;
+  margin-inline-end: 10px;
+}
+
+.card p{
+    text-align: center;
+    font-family:"Rubik", sans-serif;
+}
+
+iframe {
+    max-width: 100%;
+}
+
+footer{
+    font-family:"Rubik", sans-serif;
+    background: rgb(16, 80, 122);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+footer #mod{
+    color: yellow;
+}
+
+figure{
+    text-align: center;
+}
+
+#outside{
+    text-transform: capitalize;
+}

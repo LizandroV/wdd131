@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lizandro Vivanco - Turin</title>
+    <meta name="description" content="WDD 131 - Web Frontend Development">
+    <meta name="author" content="Lizandro Vivanco">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+    <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/place-small.css">
+    <link rel="stylesheet" href="styles/place-larger.css">
+      <!--  Essential META Tags -->
+    <meta property="og:title" content="Lizandro Vivanco | Home">
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/City_of_Lima%2C_Peru.jpg/640px-City_of_Lima%2C_Peru.jpg">
+    <meta property="og:url" content="https://lizandrov.github.io/wdd131/">
+    <meta name="twitter:card" content="summary_large_image">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/windchill.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <h1>Turin, Italy</h1>
+    </header>
+
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 560px)" srcset="images/hero-torino-large.webp">
+                <img src="images/hero-torino-medium.webp" alt="Turin, Italy">
+            </picture>
+        </div>
+
+        <section class="card" id="data">
+            <h3>Data</h3>
+            <p><strong>Area:</strong> 130.17 km2</p>
+            <p><strong>Population:</strong> 847,622</p>
+            <p><strong>Capital:</strong> Roma</p>
+            <p><strong>Languages:</strong> Italian</p>
+            <p><strong>Currency:</strong> Italian lira</p>
+            <p><strong>Time Zone:</strong> 	UTC+1</p>
+            <p><strong>Calling Code:</strong> 0039 011</p>
+            <p><strong>Internet TLD:</strong> .it</p>
+
+        </section>
+        <section class="card" id="wheater">
+            <h3>Weather</h3>
+            <figure>
+                <img id="weather-icon" src="" alt="weather-icon">
+            </figure>
+            <p><strong>Temperature:</strong> <span id="current">22</span>°C</p>
+            <p><strong>Conditions:</strong> <span id="outside">Cloudy</span></p>
+            <p><strong>Wind:</strong> <span id="wind">5.1</span>m/s</p>
+            <p><strong>Wind Chill</strong> <span id="windchill">5.1</span>°C</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; <span id="copyrightYear"></span> Lizandro Vivanco <br> Peru</p>
+        <p id="mod">Last Modification: <span id="modified">Today</span></p>
+    </footer>
+
+</body>
+</html>
