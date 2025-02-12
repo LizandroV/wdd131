@@ -39,3 +39,12 @@ function copyPassword() {
     document.execCommand('copy');
     alert('Password copied to clipboard!');
 }
+
+var slider = document.getElementById("myRange");
+var input = document.getElementById("length");
+var output = document.getElementById("length2");
+input.value = slider.value;
+
+slider.oninput = function() {
+    input.value = this.value;
+}

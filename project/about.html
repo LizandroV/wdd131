@@ -1,38 +1,90 @@
-<!-- about.html -->
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - Password Generator</title>
+    <title>About</title>
+    <meta name="description" content="WDD 131 - Web Frontend Development">
+    <meta name="author" content="Lizandro Vivanco">
+    <link rel="icon" type="image/png" href="images/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
+    <link rel="manifest" href="images/site.webmanifest" />
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/styles.css">
+      <!--  Essential META Tags -->
+    <meta property="og:title" content="Password Generator">
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/City_of_Lima%2C_Peru.jpg/640px-City_of_Lima%2C_Peru.jpg">
+    <meta property="og:url" content="https://lizandrov.github.io/wdd131/project/">
+    <meta name="twitter:card" content="summary_large_image">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 
 <body>
-    <!-- Navigation Bar -->
     <nav>
         <div class="nav-container">
-            <a href="index.html" class="logo">Password Generator</a>
+            <a href="./index.html" class="logo">Password Generator</a>
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html" class="active">About</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- About Content -->
+
     <main>
-        <section class="about-section">
-            <h1>About This App</h1>
-            <p>This Password Generator helps you create strong, secure passwords to protect your online accounts. Customize the length and character types to meet your specific needs. Stay safe online!</p>
-        </section>
+        <article>
+            <h1>Why It's Necessary to Create Strong Passwords</h1>
+            <section>
+                <h2>Introduction</h2>
+                <p>Passwords are the first line of defense against unauthorized access to our online accounts. A strong password is crucial for protecting our personal, financial, and professional information.</p>
+                <img src="images/internet-security.webp" alt="Internet Security" loading="lazy">
+            </section>
+    
+            <section>
+                <h2>The Risk of Weak Passwords</h2>
+                <p>Many people still use simple and easy-to-guess passwords, such as "123456" or "password." These passwords are vulnerable to brute force attacks and can easily compromise accounts.</p>
+                <img src="images/weak-password.jpeg" alt="Weak Passwords" loading="lazy">
+            </section>
+    
+            <section>
+                <h2>Characteristics of a Strong Password</h2>
+                <ul>
+                    <li>It should be at least 12 characters long.</li>
+                    <li>Include a mix of uppercase and lowercase letters.</li>
+                    <li>Include numbers and special characters like @, #, $.</li>
+                    <li>Avoid common words or personal names.</li>
+                </ul>
+                <img src="images/strong-password.webp" alt="Strong Passwords" loading="lazy">
+            </section>
+    
+            <section>
+                <h2>The Importance of Using Different Passwords</h2>
+                <p>Do not use the same password for all your accounts. If one of your accounts is hacked, all your other accounts will be vulnerable. Use different passwords for each of your services.</p>
+                <img src="images/same-password.webp" alt="Different Passwords" loading="lazy">
+            </section>
+    
+            <section>
+                <h2>Tools for Managing Passwords</h2>
+                <p>There are password management apps that allow you to store strong passwords without having to remember them all. These tools can generate random passwords and store them in an encrypted form.</p>
+                <img src="images/password-management.webp" alt="Password Management" loading="lazy">
+            </section>
+    
+            <section>
+                <h2>Conclusion</h2>
+                <p>Online security depends on the choices we make, and one of the most important is creating strong passwords. Don't underestimate the importance of protecting your information with robust passwords.</p>
+                <img src="images/online-security.webp" alt="Online Security" loading="lazy">
+            </section>
+        </article>
+    
     </main>
 
-    <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Password Generator. All Rights Reserved.</p>
+        <p>&copy; <span id="copyrightYear"></span> Lizandro Vivanco <br> Password Generator</p>
+        <p id="mod">Last Modification: <span id="modified">Today</span></p>
     </footer>
-</body>
 
+</body>
 </html>
